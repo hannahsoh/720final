@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +19,13 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+    { path: '', pathMatch: 'full', redirectTo: 'initial-page' },
+    { path: 'homepage', component: MotoryachtsComponent }, // move all your appcomponent code to this component
+    { path: 'sportfish', component: SportfishComponent },
+    { path: 'experience', component: ExperienceComponent }
+   ])
   ],
   providers: [],
   bootstrap: [AppComponent]
