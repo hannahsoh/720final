@@ -21,8 +21,8 @@ import { HeaderComponent } from './components/header/header.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-    { path: '', pathMatch: 'full', redirectTo: 'initial-page' },
-    { path: 'homepage', component: MotoryachtsComponent }, // move all your appcomponent code to this component
+    { path: '', pathMatch: 'full', redirectTo: 'motoryachts' },
+    { path: 'motoryachts', component: MotoryachtsComponent }, // move all your appcomponent code to this component
     { path: 'sportfish', component: SportfishComponent },
     { path: 'experience', component: ExperienceComponent }
    ])
