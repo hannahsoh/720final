@@ -8,6 +8,7 @@ import { MotoryachtsComponent } from './motoryachts/motoryachts.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SportfishComponent } from './sportfish/sportfish.component';
 import { HeaderComponent } from './components/header/header.component';
+import { VisitflushingComponent } from './visitflushing/visitflushing.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HeaderComponent } from './components/header/header.component';
     MotoryachtsComponent,
     ExperienceComponent,
     SportfishComponent,
-    HeaderComponent
+    HeaderComponent,
+    VisitflushingComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { HeaderComponent } from './components/header/header.component';
     { path: '', pathMatch: 'full', redirectTo: 'motoryachts' },
     { path: 'motoryachts', component: MotoryachtsComponent }, // move all your appcomponent code to this component
     { path: 'sportfish', component: SportfishComponent },
-    { path: 'experience', component: ExperienceComponent }
+    { path: 'experience', component: ExperienceComponent },
+    { path: 'visitflushing', component:VisitflushingComponent }
    ])
   ],
   providers: [],
